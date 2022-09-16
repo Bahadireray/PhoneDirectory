@@ -19,7 +19,7 @@ import io.reactivex.rxjava3.disposables.CompositeDisposable
 import io.reactivex.rxjava3.schedulers.Schedulers
 
 
-class HomeFragment : Fragment(), UserListAdapter.Listener {
+class HomeFragment : Fragment() {
 
     private lateinit var userListAdapter: UserListAdapter
     private var _binding: FragmentHomeBinding? = null
@@ -87,13 +87,4 @@ class HomeFragment : Fragment(), UserListAdapter.Listener {
 
     }
 
-    override fun onLongItemClick(user: User) {
-        view?.let {
-            Navigation.findNavController(it)
-                .navigate(R.id.homeFragment, Bundle().apply {
-                    userDao.delete(user)
-
-                })
-        }
-    }
 }

@@ -1,7 +1,6 @@
 package com.example.telephonedirectory.adapter
 
 import android.graphics.BitmapFactory
-import android.location.GnssAntennaInfo
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.ViewGroup
@@ -11,7 +10,6 @@ import com.example.telephonedirectory.R
 import com.example.telephonedirectory.adapter.UserListAdapter.UserHolder
 import com.example.telephonedirectory.data.model.User
 import com.example.telephonedirectory.databinding.RoxRecyclerBinding
-import okhttp3.internal.http2.Http2Connection
 
 class UserListAdapter(val userList: List<User>) :
     RecyclerView.Adapter<UserHolder>() {
@@ -19,12 +17,6 @@ class UserListAdapter(val userList: List<User>) :
     class UserHolder(val binding: RoxRecyclerBinding) : RecyclerView.ViewHolder(binding.root) {
 
     }
-
-    interface Listener {
-        fun onLongItemClick(user:User)
-    }
-
-
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): UserHolder {
 
         val binding = RoxRecyclerBinding.inflate(LayoutInflater.from(parent.context), parent, false)
