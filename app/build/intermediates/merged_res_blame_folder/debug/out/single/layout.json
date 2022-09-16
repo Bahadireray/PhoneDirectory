@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "com.example.telephonedirectory.app-mergeDebugResources-50:/layout/activity_main.xml",
+        "source": "com.example.telephonedirectory.app-main-53:/layout/activity_main.xml"
+    },
+    {
+        "merged": "com.example.telephonedirectory.app-mergeDebugResources-50:/layout/fragment_user_add.xml",
+        "source": "com.example.telephonedirectory.app-main-53:/layout/fragment_user_add.xml"
+    },
+    {
+        "merged": "com.example.telephonedirectory.app-mergeDebugResources-50:/layout/fragment_home.xml",
+        "source": "com.example.telephonedirectory.app-main-53:/layout/fragment_home.xml"
+    },
+    {
+        "merged": "com.example.telephonedirectory.app-mergeDebugResources-50:/layout/rox_recycler.xml",
+        "source": "com.example.telephonedirectory.app-main-53:/layout/rox_recycler.xml"
+    }
+]

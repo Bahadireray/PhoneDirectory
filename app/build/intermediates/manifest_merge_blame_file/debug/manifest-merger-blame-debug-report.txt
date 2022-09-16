@@ -1,0 +1,170 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.telephonedirectory"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="30"
+8-->C:\Users\user\AndroidStudioProjects\TelephoneDirectory\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="32" />
+9-->C:\Users\user\AndroidStudioProjects\TelephoneDirectory\app\src\main\AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+11-->C:\Users\user\AndroidStudioProjects\TelephoneDirectory\app\src\main\AndroidManifest.xml:6:5-96
+11-->C:\Users\user\AndroidStudioProjects\TelephoneDirectory\app\src\main\AndroidManifest.xml:6:22-77
+12
+13    <!-- Include required permissions for Google Maps API to run. -->
+14    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+14-->[com.google.android.gms:play-services-maps:18.1.0] C:\Users\user\.gradle\caches\transforms-3\9cc5672c5a61a05a4cbdf7fbdfe37654\transformed\play-services-maps-18.1.0\AndroidManifest.xml:23:5-79
+14-->[com.google.android.gms:play-services-maps:18.1.0] C:\Users\user\.gradle\caches\transforms-3\9cc5672c5a61a05a4cbdf7fbdfe37654\transformed\play-services-maps-18.1.0\AndroidManifest.xml:23:22-76
+15    <uses-permission android:name="android.permission.INTERNET" />
+15-->[com.google.android.gms:play-services-maps:18.1.0] C:\Users\user\.gradle\caches\transforms-3\9cc5672c5a61a05a4cbdf7fbdfe37654\transformed\play-services-maps-18.1.0\AndroidManifest.xml:24:5-67
+15-->[com.google.android.gms:play-services-maps:18.1.0] C:\Users\user\.gradle\caches\transforms-3\9cc5672c5a61a05a4cbdf7fbdfe37654\transformed\play-services-maps-18.1.0\AndroidManifest.xml:24:22-64
+16
+17    <uses-feature
+17-->[com.google.android.gms:play-services-maps:18.1.0] C:\Users\user\.gradle\caches\transforms-3\9cc5672c5a61a05a4cbdf7fbdfe37654\transformed\play-services-maps-18.1.0\AndroidManifest.xml:26:5-28:35
+18        android:glEsVersion="0x00020000"
+18-->[com.google.android.gms:play-services-maps:18.1.0] C:\Users\user\.gradle\caches\transforms-3\9cc5672c5a61a05a4cbdf7fbdfe37654\transformed\play-services-maps-18.1.0\AndroidManifest.xml:27:9-41
+19        android:required="true" />
+19-->[com.google.android.gms:play-services-maps:18.1.0] C:\Users\user\.gradle\caches\transforms-3\9cc5672c5a61a05a4cbdf7fbdfe37654\transformed\play-services-maps-18.1.0\AndroidManifest.xml:28:9-32
+20
+21    <queries>
+21-->[com.google.android.gms:play-services-maps:18.1.0] C:\Users\user\.gradle\caches\transforms-3\9cc5672c5a61a05a4cbdf7fbdfe37654\transformed\play-services-maps-18.1.0\AndroidManifest.xml:30:5-34:15
+22
+23        <!-- Needs to be explicitly declared on Android R+ -->
+24        <package android:name="com.google.android.apps.maps" />
+24-->[com.google.android.gms:play-services-maps:18.1.0] C:\Users\user\.gradle\caches\transforms-3\9cc5672c5a61a05a4cbdf7fbdfe37654\transformed\play-services-maps-18.1.0\AndroidManifest.xml:33:9-64
+24-->[com.google.android.gms:play-services-maps:18.1.0] C:\Users\user\.gradle\caches\transforms-3\9cc5672c5a61a05a4cbdf7fbdfe37654\transformed\play-services-maps-18.1.0\AndroidManifest.xml:33:18-61
+25    </queries>
+26
+27    <application
+27-->C:\Users\user\AndroidStudioProjects\TelephoneDirectory\app\src\main\AndroidManifest.xml:7:5-43:19
+28        android:allowBackup="true"
+28-->C:\Users\user\AndroidStudioProjects\TelephoneDirectory\app\src\main\AndroidManifest.xml:8:9-35
+29        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+29-->[androidx.core:core:1.8.0] C:\Users\user\.gradle\caches\transforms-3\048b053891c583c759bd08e73150e6da\transformed\core-1.8.0\AndroidManifest.xml:24:18-86
+30        android:dataExtractionRules="@xml/data_extraction_rules"
+30-->C:\Users\user\AndroidStudioProjects\TelephoneDirectory\app\src\main\AndroidManifest.xml:9:9-65
+31        android:debuggable="true"
+32        android:extractNativeLibs="false"
+33        android:fullBackupContent="@xml/backup_rules"
+33-->C:\Users\user\AndroidStudioProjects\TelephoneDirectory\app\src\main\AndroidManifest.xml:10:9-54
+34        android:icon="@mipmap/ic_launcher"
+34-->C:\Users\user\AndroidStudioProjects\TelephoneDirectory\app\src\main\AndroidManifest.xml:11:9-43
+35        android:label="@string/app_name"
+35-->C:\Users\user\AndroidStudioProjects\TelephoneDirectory\app\src\main\AndroidManifest.xml:12:9-41
+36        android:roundIcon="@mipmap/ic_launcher_round"
+36-->C:\Users\user\AndroidStudioProjects\TelephoneDirectory\app\src\main\AndroidManifest.xml:13:9-54
+37        android:supportsRtl="true"
+37-->C:\Users\user\AndroidStudioProjects\TelephoneDirectory\app\src\main\AndroidManifest.xml:14:9-35
+38        android:testOnly="true"
+39        android:theme="@style/Theme.AppCompat.NoActionBar"
+39-->C:\Users\user\AndroidStudioProjects\TelephoneDirectory\app\src\main\AndroidManifest.xml:15:9-59
+40        android:usesCleartextTraffic="true" >
+40-->C:\Users\user\AndroidStudioProjects\TelephoneDirectory\app\src\main\AndroidManifest.xml:16:9-44
+41
+42        <!--
+43             TODO: Before you run your application, you need a Google Maps API key.
+44
+45             To get one, follow the directions here:
+46
+47                https://developers.google.com/maps/documentation/android-sdk/get-api-key
+48
+49             Once you have your API key (it starts with "AIza"), define a new property in your
+50             project's local.properties file (e.g. MAPS_API_KEY=Aiza...), and replace the
+51             "YOUR_API_KEY" string in this file with "${MAPS_API_KEY}".
+52        -->
+53        <meta-data
+53-->C:\Users\user\AndroidStudioProjects\TelephoneDirectory\app\src\main\AndroidManifest.xml:30:9-32:71
+54            android:name="com.google.android.geo.API_KEY"
+54-->C:\Users\user\AndroidStudioProjects\TelephoneDirectory\app\src\main\AndroidManifest.xml:31:13-58
+55            android:value="AIzaSyDGsRD1nSPJgZFJfoFQwQKtTnQK5rkVGlQ" />
+55-->C:\Users\user\AndroidStudioProjects\TelephoneDirectory\app\src\main\AndroidManifest.xml:32:13-68
+56
+57        <activity
+57-->C:\Users\user\AndroidStudioProjects\TelephoneDirectory\app\src\main\AndroidManifest.xml:34:9-42:20
+58            android:name="com.example.telephonedirectory.view.MainActivity"
+58-->C:\Users\user\AndroidStudioProjects\TelephoneDirectory\app\src\main\AndroidManifest.xml:35:13-46
+59            android:exported="true" >
+59-->C:\Users\user\AndroidStudioProjects\TelephoneDirectory\app\src\main\AndroidManifest.xml:36:13-36
+60            <intent-filter>
+60-->C:\Users\user\AndroidStudioProjects\TelephoneDirectory\app\src\main\AndroidManifest.xml:37:13-41:29
+61                <action android:name="android.intent.action.MAIN" />
+61-->C:\Users\user\AndroidStudioProjects\TelephoneDirectory\app\src\main\AndroidManifest.xml:38:17-69
+61-->C:\Users\user\AndroidStudioProjects\TelephoneDirectory\app\src\main\AndroidManifest.xml:38:25-66
+62
+63                <category android:name="android.intent.category.LAUNCHER" />
+63-->C:\Users\user\AndroidStudioProjects\TelephoneDirectory\app\src\main\AndroidManifest.xml:40:17-77
+63-->C:\Users\user\AndroidStudioProjects\TelephoneDirectory\app\src\main\AndroidManifest.xml:40:27-74
+64            </intent-filter>
+65        </activity>
+66
+67        <uses-library
+67-->[androidx.window:window:1.0.0] C:\Users\user\.gradle\caches\transforms-3\f64b5e855bb83d76a47529fb3d06e315\transformed\window-1.0.0\AndroidManifest.xml:25:9-27:40
+68            android:name="androidx.window.extensions"
+68-->[androidx.window:window:1.0.0] C:\Users\user\.gradle\caches\transforms-3\f64b5e855bb83d76a47529fb3d06e315\transformed\window-1.0.0\AndroidManifest.xml:26:13-54
+69            android:required="false" />
+69-->[androidx.window:window:1.0.0] C:\Users\user\.gradle\caches\transforms-3\f64b5e855bb83d76a47529fb3d06e315\transformed\window-1.0.0\AndroidManifest.xml:27:13-37
+70        <uses-library
+70-->[androidx.window:window:1.0.0] C:\Users\user\.gradle\caches\transforms-3\f64b5e855bb83d76a47529fb3d06e315\transformed\window-1.0.0\AndroidManifest.xml:28:9-30:40
+71            android:name="androidx.window.sidecar"
+71-->[androidx.window:window:1.0.0] C:\Users\user\.gradle\caches\transforms-3\f64b5e855bb83d76a47529fb3d06e315\transformed\window-1.0.0\AndroidManifest.xml:29:13-51
+72            android:required="false" /> <!-- Needs to be explicitly declared on P+ -->
+72-->[androidx.window:window:1.0.0] C:\Users\user\.gradle\caches\transforms-3\f64b5e855bb83d76a47529fb3d06e315\transformed\window-1.0.0\AndroidManifest.xml:30:13-37
+73        <uses-library
+73-->[com.google.android.gms:play-services-maps:18.1.0] C:\Users\user\.gradle\caches\transforms-3\9cc5672c5a61a05a4cbdf7fbdfe37654\transformed\play-services-maps-18.1.0\AndroidManifest.xml:39:9-41:40
+74            android:name="org.apache.http.legacy"
+74-->[com.google.android.gms:play-services-maps:18.1.0] C:\Users\user\.gradle\caches\transforms-3\9cc5672c5a61a05a4cbdf7fbdfe37654\transformed\play-services-maps-18.1.0\AndroidManifest.xml:40:13-50
+75            android:required="false" />
+75-->[com.google.android.gms:play-services-maps:18.1.0] C:\Users\user\.gradle\caches\transforms-3\9cc5672c5a61a05a4cbdf7fbdfe37654\transformed\play-services-maps-18.1.0\AndroidManifest.xml:41:13-37
+76
+77        <activity
+77-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\user\.gradle\caches\transforms-3\cfbbba63eeede6d209c8257a24e290ae\transformed\play-services-base-18.0.1\AndroidManifest.xml:20:9-22:45
+78            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+78-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\user\.gradle\caches\transforms-3\cfbbba63eeede6d209c8257a24e290ae\transformed\play-services-base-18.0.1\AndroidManifest.xml:20:19-85
+79            android:exported="false"
+79-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\user\.gradle\caches\transforms-3\cfbbba63eeede6d209c8257a24e290ae\transformed\play-services-base-18.0.1\AndroidManifest.xml:22:19-43
+80            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+80-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\user\.gradle\caches\transforms-3\cfbbba63eeede6d209c8257a24e290ae\transformed\play-services-base-18.0.1\AndroidManifest.xml:21:19-78
+81
+82        <meta-data
+82-->[com.google.android.gms:play-services-basement:18.0.0] C:\Users\user\.gradle\caches\transforms-3\65866f48d42496258754c54f877d734f\transformed\play-services-basement-18.0.0\AndroidManifest.xml:21:9-23:69
+83            android:name="com.google.android.gms.version"
+83-->[com.google.android.gms:play-services-basement:18.0.0] C:\Users\user\.gradle\caches\transforms-3\65866f48d42496258754c54f877d734f\transformed\play-services-basement-18.0.0\AndroidManifest.xml:22:13-58
+84            android:value="@integer/google_play_services_version" />
+84-->[com.google.android.gms:play-services-basement:18.0.0] C:\Users\user\.gradle\caches\transforms-3\65866f48d42496258754c54f877d734f\transformed\play-services-basement-18.0.0\AndroidManifest.xml:23:13-66
+85
+86        <service
+86-->[androidx.room:room-runtime:2.3.0] C:\Users\user\.gradle\caches\transforms-3\79ee5e0ab7f7aed732d3def163dd0f8f\transformed\room-runtime-2.3.0\AndroidManifest.xml:25:9-28:40
+87            android:name="androidx.room.MultiInstanceInvalidationService"
+87-->[androidx.room:room-runtime:2.3.0] C:\Users\user\.gradle\caches\transforms-3\79ee5e0ab7f7aed732d3def163dd0f8f\transformed\room-runtime-2.3.0\AndroidManifest.xml:26:13-74
+88            android:directBootAware="true"
+88-->[androidx.room:room-runtime:2.3.0] C:\Users\user\.gradle\caches\transforms-3\79ee5e0ab7f7aed732d3def163dd0f8f\transformed\room-runtime-2.3.0\AndroidManifest.xml:27:13-43
+89            android:exported="false" />
+89-->[androidx.room:room-runtime:2.3.0] C:\Users\user\.gradle\caches\transforms-3\79ee5e0ab7f7aed732d3def163dd0f8f\transformed\room-runtime-2.3.0\AndroidManifest.xml:28:13-37
+90
+91        <provider
+91-->[androidx.emoji2:emoji2:1.2.0] C:\Users\user\.gradle\caches\transforms-3\6030e86ca72ae10fc7ac689ea8c6daf6\transformed\emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
+92            android:name="androidx.startup.InitializationProvider"
+92-->[androidx.emoji2:emoji2:1.2.0] C:\Users\user\.gradle\caches\transforms-3\6030e86ca72ae10fc7ac689ea8c6daf6\transformed\emoji2-1.2.0\AndroidManifest.xml:25:13-67
+93            android:authorities="com.example.telephonedirectory.androidx-startup"
+93-->[androidx.emoji2:emoji2:1.2.0] C:\Users\user\.gradle\caches\transforms-3\6030e86ca72ae10fc7ac689ea8c6daf6\transformed\emoji2-1.2.0\AndroidManifest.xml:26:13-68
+94            android:exported="false" >
+94-->[androidx.emoji2:emoji2:1.2.0] C:\Users\user\.gradle\caches\transforms-3\6030e86ca72ae10fc7ac689ea8c6daf6\transformed\emoji2-1.2.0\AndroidManifest.xml:27:13-37
+95            <meta-data
+95-->[androidx.emoji2:emoji2:1.2.0] C:\Users\user\.gradle\caches\transforms-3\6030e86ca72ae10fc7ac689ea8c6daf6\transformed\emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
+96                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+96-->[androidx.emoji2:emoji2:1.2.0] C:\Users\user\.gradle\caches\transforms-3\6030e86ca72ae10fc7ac689ea8c6daf6\transformed\emoji2-1.2.0\AndroidManifest.xml:30:17-75
+97                android:value="androidx.startup" />
+97-->[androidx.emoji2:emoji2:1.2.0] C:\Users\user\.gradle\caches\transforms-3\6030e86ca72ae10fc7ac689ea8c6daf6\transformed\emoji2-1.2.0\AndroidManifest.xml:31:17-49
+98            <meta-data
+98-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\user\.gradle\caches\transforms-3\b4de90d306fd4d6278a5a1a88e4eb8b9\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:31:13-33:52
+99                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+99-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\user\.gradle\caches\transforms-3\b4de90d306fd4d6278a5a1a88e4eb8b9\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:32:17-78
+100                android:value="androidx.startup" />
+100-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\user\.gradle\caches\transforms-3\b4de90d306fd4d6278a5a1a88e4eb8b9\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:33:17-49
+101        </provider>
+102    </application>
+103
+104</manifest>
