@@ -4,7 +4,6 @@ package com.example.telephonedirectory.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ImageView;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -12,6 +11,7 @@ import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.example.telephonedirectory.R;
+import de.hdodenhof.circleimageview.CircleImageView;
 import java.lang.NullPointerException;
 import java.lang.Override;
 import java.lang.String;
@@ -21,7 +21,7 @@ public final class RoxRecyclerBinding implements ViewBinding {
   private final ConstraintLayout rootView;
 
   @NonNull
-  public final ImageView recyclerImageView;
+  public final CircleImageView recyclerImageView;
 
   @NonNull
   public final TextView recyclerViewNumber;
@@ -30,7 +30,7 @@ public final class RoxRecyclerBinding implements ViewBinding {
   public final TextView recyclerViewUser;
 
   private RoxRecyclerBinding(@NonNull ConstraintLayout rootView,
-      @NonNull ImageView recyclerImageView, @NonNull TextView recyclerViewNumber,
+      @NonNull CircleImageView recyclerImageView, @NonNull TextView recyclerViewNumber,
       @NonNull TextView recyclerViewUser) {
     this.rootView = rootView;
     this.recyclerImageView = recyclerImageView;
@@ -66,7 +66,7 @@ public final class RoxRecyclerBinding implements ViewBinding {
     int id;
     missingId: {
       id = R.id.recyclerImageView;
-      ImageView recyclerImageView = ViewBindings.findChildViewById(rootView, id);
+      CircleImageView recyclerImageView = ViewBindings.findChildViewById(rootView, id);
       if (recyclerImageView == null) {
         break missingId;
       }

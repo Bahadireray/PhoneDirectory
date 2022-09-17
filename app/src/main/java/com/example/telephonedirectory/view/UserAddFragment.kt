@@ -7,7 +7,6 @@ import android.graphics.Bitmap
 import android.graphics.BitmapFactory
 import android.graphics.ImageDecoder
 import android.net.Uri
-import android.opengl.Visibility
 import android.os.Build
 import android.os.Bundle
 import android.provider.MediaStore
@@ -39,20 +38,28 @@ import java.io.IOException
 class UserAddFragment : Fragment() {
 
     //View Binding
-    private var _binding: FragmentUserAddBinding? = null
     private val binding get() = _binding!!
+    private var _binding: FragmentUserAddBinding? = null
+
+    //Data Transmission
+    var userFromMain: User? = null
     var selectedPicture: Uri? = null
     var selectedBitmap: Bitmap? = null
+
+    //Room
+    private lateinit var userDao: UserDao
+    private lateinit var userDataBase: UserDataBase
+    private val mDisposable = CompositeDisposable()
+
+    //Android Permission
     private lateinit var activityResultLauncher: ActivityResultLauncher<Intent>
     private lateinit var permissionLauncher: ActivityResultLauncher<String>
-    private lateinit var userDataBase: UserDataBase
-    private lateinit var userDao: UserDao
-    private val mDisposable = CompositeDisposable()
-    var userFromMain: User? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         registerLauncher()
+
+        //Room initialize
         userDataBase =
             Room.databaseBuilder(requireContext(), UserDataBase::class.java, "Users")
                 .allowMainThreadQueries()
@@ -64,6 +71,8 @@ class UserAddFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
+
+        //View initialize
         _binding = FragmentUserAddBinding.inflate(layoutInflater, container, false)
         val view = binding.root
         return view
@@ -71,12 +80,11 @@ class UserAddFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+
         binding.imageView.setOnClickListener { selectedImg(view) }
         binding.userSaveButton.setOnClickListener {
-            println("setOnclick")
             save(view)
         }
-
 
         val info = requireArguments().getString("info")
         if (info == "new") {
@@ -87,13 +95,12 @@ class UserAddFragment : Fragment() {
             binding.imageView.setImageBitmap(selectedImageBackground)
         } else {
 
-            binding.userSaveButton.visibility=View.INVISIBLE
+            binding.userSaveButton.visibility = View.INVISIBLE
             binding.edtUserName.setText(requireArguments().getString("userName"))
             binding.edtUserPhone.setText(requireArguments().getString("userNumber"))
             val byteArray = requireArguments().getByteArray("userImage")
-            val bitmap = BitmapFactory.decodeByteArray(byteArray,0,byteArray!!.size)
+            val bitmap = BitmapFactory.decodeByteArray(byteArray, 0, byteArray!!.size)
             binding.imageView.setImageBitmap(bitmap)
-
 
         }
     }
@@ -224,5 +231,11 @@ class UserAddFragment : Fragment() {
                     .show()
             }
         }
+    }
+
+    override fun onDestroyView() {
+        super.onDestroyView()
+        _binding = null
+        mDisposable.clear()
     }
 }

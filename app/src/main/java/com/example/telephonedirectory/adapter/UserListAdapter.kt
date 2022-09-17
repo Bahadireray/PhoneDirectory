@@ -17,8 +17,8 @@ class UserListAdapter(val userList: List<User>) :
     class UserHolder(val binding: RoxRecyclerBinding) : RecyclerView.ViewHolder(binding.root) {
 
     }
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): UserHolder {
 
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): UserHolder {
         val binding = RoxRecyclerBinding.inflate(LayoutInflater.from(parent.context), parent, false)
         return UserHolder(binding)
     }
@@ -27,13 +27,11 @@ class UserListAdapter(val userList: List<User>) :
         return userList.size
     }
 
-
     override fun onBindViewHolder(holder: UserHolder, position: Int) {
 
-
+        //İmage data intent to -> Bitmap
         val byteArray = userList[position].userImage
         val bitmap = BitmapFactory.decodeByteArray(byteArray, 0, byteArray!!.size)
-
 
         holder.binding.recyclerViewUser.text = userList[position].userName
         holder.binding.recyclerViewNumber.text = userList[position].userNumber
@@ -49,6 +47,5 @@ class UserListAdapter(val userList: List<User>) :
                     })
             }
         }
-
     }
 }

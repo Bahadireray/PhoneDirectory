@@ -20,16 +20,19 @@ import io.reactivex.rxjava3.schedulers.Schedulers
 
 
 class HomeFragment : Fragment() {
-
-    private lateinit var userListAdapter: UserListAdapter
-    private var _binding: FragmentHomeBinding? = null
+    //View Binding
     private val binding get() = _binding!!
-    private val mDisposable = CompositeDisposable()
+    private var _binding: FragmentHomeBinding? = null
+
     private lateinit var userDao: UserDao
     private lateinit var userDataBase: UserDataBase
+    private val mDisposable = CompositeDisposable()
+    private lateinit var userListAdapter: UserListAdapter
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
+        //Room initialize
         userDataBase =
             Room.databaseBuilder(requireContext(), UserDataBase::class.java, "Users")
                 .allowMainThreadQueries()
@@ -42,6 +45,7 @@ class HomeFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
+        //Binding View initialize
         _binding = FragmentHomeBinding.inflate(layoutInflater, container, false)
         val view = binding.root
         return view
@@ -58,6 +62,7 @@ class HomeFragment : Fragment() {
         }
     }
 
+    //Room Selected Data
     fun getFromSQL() {
         mDisposable.add(
             userDao.getUserWithNameAndId()
@@ -76,8 +81,8 @@ class HomeFragment : Fragment() {
     override fun onDestroyView() {
         super.onDestroyView()
         _binding = null
+        mDisposable.clear()
     }
-
 
     private fun handleResponse() {
         view?.let {
