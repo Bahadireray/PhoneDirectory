@@ -182,9 +182,7 @@ class UserAddFragment : Fragment() {
                 val intentToGallery =
                     Intent(Intent.ACTION_PICK, MediaStore.Images.Media.EXTERNAL_CONTENT_URI)
                 activityResultLauncher.launch(intentToGallery)
-
             }
-
         }
     }
 
