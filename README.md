@@ -3,6 +3,7 @@
 ## Kullanılan Teknolojiler
 ### Recyclerview
 ### Room DB
+### Android Permission -> Read External Storage 
 ### Rxjava
 ### View Binding
 ### Circleimageview
